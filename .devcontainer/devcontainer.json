@@ -1,5 +1,5 @@
 {
-    "name": "ICP Message Board Contract",
+    "name": "ICP Liargame DKG Contract",
     "image": "ghcr.io/dfinity/icp-dev-env-azle:6",
     "forwardPorts": [
         4943
@@ -11,7 +11,7 @@
         }
     },
     "onCreateCommand": "nohup bash -c 'dfx start &'",
-    "updateContentCommand": "sed -i 's/npx azle message_board/npx azle message_board --native-compilation/g' dfx.json",
+    "updateContentCommand": "sed -i 's/npx azle liargame_dkg/npx azle liargame_dkg --native-compilation/g' dfx.json",
     "postAttachCommand": "([ -f nohup.out ] && (npm i && cat nohup.out && rm nohup.out)) || exit 0",
     "remoteUser": "root"
 }
